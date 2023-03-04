@@ -2,7 +2,11 @@
 
 
 def line_count(infile):
-    pass
+    with open(infile, 'r') as countsfilelines:
+        
+        cnts = countsfilelines.readlines()
+        
+    print(len(cnts))
 
 
 if __name__ == "__main__":
